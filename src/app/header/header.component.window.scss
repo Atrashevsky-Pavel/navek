@@ -1,0 +1,29 @@
+@media screen and (max-width: 940px) {
+  .header {
+    span {
+      display: none;
+    }
+    .header_user {
+      display: none;
+    }
+    .header_hamburger {
+      display: block;
+    }
+    .header_image {
+      left: 284px;
+      top: 21px;
+    }
+
+  }
+  .header_userName {
+    top: 0%;
+    left: 0%;
+    width: 375px;
+    height: 376px;
+    .header_userName_cross {
+      display: block;
+
+    }
+  }
+}
+

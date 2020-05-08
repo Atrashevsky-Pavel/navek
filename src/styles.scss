@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('/fonts/sf pro display/SFProDisplay-Medium.eot');
+  src: local('/fonts/sf pro display/SF Pro Display Medium'), local('/fonts/sf pro display/SFProDisplay-Medium'),
+  url('/fonts/sf pro display/SFProDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/sf pro display/SFProDisplay-Medium.woff2') format('woff2'),
+  url('/fonts/sf pro display/SFProDisplay-Medium.woff') format('woff'),
+  url('/fonts/sf pro display/SFProDisplay-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+//@font-face {
+//  font-family: 'Inter';
+//  src: url('/fonts/Inter/Inter-BoldItalic.eot');
+//  src: local('/fonts/Inter/Inter Bold Italic'), local('/fonts/Inter/Inter-BoldItalic'),
+//  url('/fonts/Inter/Inter-BoldItalic.eot?#iefix') format('/fonts/Inter/embedded-opentype'),
+//  url('/fonts/Inter/Inter-BoldItalic.woff2') format('woff2'),
+//  url('/fonts/Inter/Inter-BoldItalic.woff') format('woff'),
+//  url('/fonts/Inter/Inter-BoldItalic.ttf') format('truetype');
+//  font-weight: bold;
+//  font-style: italic;
+//}
+body {
+  background-color: #E5E5E5;
+  margin: 0px;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+

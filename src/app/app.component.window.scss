@@ -1,0 +1,25 @@
+@media screen and (max-width: 1150px) {
+    .content_items {
+    grid-template-columns: 48% 48%;
+    grid-column-gap: 4%;
+  }
+}
+@media screen and (max-width: 720px) {
+  .content_items {
+    grid-template-columns: 90%;
+    grid-column-gap: 10%;
+  }
+}
+@media screen and (max-width: 970px) {
+  .content_filter{
+    input{
+      width: 339px;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .content_items {
+    grid-template-columns: 90%;
+    grid-column-gap: 10%;
+  }
+}

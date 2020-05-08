@@ -1,0 +1,9 @@
+$header-color: #FFFFFF;
+$content-color: #FFFFFF;
+$content-line-color: #EAEAEA;
+$titles-color: #081531;
+$content_left: 3.75%;
+@mixin header_spans ($top, $left) {
+  top: $top;
+  left: $left;
+}

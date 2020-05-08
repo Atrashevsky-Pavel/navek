@@ -1,0 +1,111 @@
+@import 'src/app/app.component.var';
+$button_right1: 16.46%;
+$button_right2: 11.39%;
+$button_right3: 3.75%;
+.content {
+  background-color: $content-color;
+  font-family: SF Pro Display;
+  min-height: 300px;
+  padding-top: 18px;
+  .content_line {
+    height: 1px;
+    background-color: $content-line-color;
+    margin-left: $content_left;
+    width: 92.5%;
+  }
+  .content_line:nth-child(3) {
+    margin-top: 13px;
+  }
+}
+.content_filter {
+  margin-top: 11px;
+  position: relative;
+  padding-left: $content_left;
+  height: 40px;
+  input {
+    width: 455px;
+    height: 38px;
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -0.03em;
+    color: #646464;
+    border-radius: 4px;
+    background: #F1F1F1;
+    border: none;
+    padding: 2px 0px 0px 30px;
+    background-image: url('/images/content/png_icons/vector1.png');
+    background-repeat: no-repeat;
+    background-position: 461px;
+  }
+  button {
+    position: relative;
+    top: -2px;
+    width: 109px;
+    height: 40px;
+    margin-left: 11px;
+    background: #4640DE;
+    border-radius: 4px;
+    border: none;
+      span {
+        color: #FFFFFF;
+        font-family: SF Pro Display;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: -0.03em;
+      }
+      img {
+         margin-left: 12px;
+       }
+  }
+  >span {
+    position: absolute;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    top: 11px;
+    letter-spacing: -0.03em;
+    color: #646464;
+  }
+  >span:nth-child(3) {
+    color: #4640DE;
+    right: $button_right1
+  }
+  >span:nth-child(4) {
+    right: $button_right2
+  }
+  >span:nth-child(5) {
+    right: $button_right3
+  }
+  @media screen and (max-width: 1300px) {
+    >span:nth-child(3) {
+      right: ($button_right1*1.5)
+    }
+    >span:nth-child(4) {
+      right: ($button_right2*1.5)
+    }
+    >span:nth-child(5) {
+      right: ($button_right3*1.5)
+    }
+  }
+}
+//<!--1332 не при экране 1440, а при 1454-->
+//<!--423-->
+//<!--32-->
+//<!--31-->
+.content_items {
+  display: grid;
+  grid-template-columns: 31.85% 31.85% 31.85%;
+  grid-column-gap: 2.25%;
+  grid-row-gap: 27px;
+  margin-top: 18px;
+  margin-left: $content_left;
+  width: 92.5%;
+  border-radius: 3px;
+  padding-bottom: 70px;
+}
