@@ -1,5 +1,4 @@
 <app-header></app-header>
-<!--1440-->
 <div class="categories" *ngIf="checkPopular">
   <span>Categories</span>
   <div>
@@ -8,23 +7,72 @@
     [category] = it>
     </app-categories>
   </div>
+  <button class="categories_submit">Submit</button>
 </div>
 
 <div class="content">
   <div class="content_line"></div>
   <div class="content_filter">
-    <input type="text" placeholder="Search for projects" src="/images/content/png_icons/vector1.png">
-    <button><span>Filters</span><img src="/images/content/png_icons/vector.png"></button>
-    <span class="content_span_Popular" (click)="Popular()">Popular</span>
+    <input class="content_filter_input" type="text" placeholder="Search for projects" src="/images/content/png_icons/vector1.png">
+    <button (click)="Popular()"><span>Filters</span><img src="/images/content/png_icons/vector.png"></button>
+    <span class="content_span_Popular">Popular</span>
     <span class="content_span_Recent">Recent</span>
     <span class="content_span_Most_funded">Most funded</span>
   </div>
   <div class="content_line"></div>
+<!--    mobile-->
+  <div class="content_filterMin">
+    <input class="content_filter_input" type="text" placeholder="Search for projects" src="/images/content/png_icons/vector1.png">
+    <button (click)="PopularMin()"><span>Filters</span><img src="/images/content/png_icons/vector.png"></button>
+  </div>
+  <div class="content_filterMinPopular"
+  *ngIf="checkPopularMin"
+  >
+    <span>Popular</span>
+    <span>Recent</span>
+    <span>Most funded</span>
+  </div>
+  <div
+  *ngIf="checkPopularMin"
+  class="content_filterMinButtons"
+  >
+    <div *ngFor="let item of categoriesMin">
+      <button><div><img src="/images/header/categories/{{item.name}}.svg">
+        <span>{{item.name}}</span><span>{{item.q}}</span></div>
+      </button>
+    </div>
+  </div>
+  <div  class="content_filterMinSelect"
+  *ngIf="checkPopularMin"
+  >
+    <div (click)="allCategories()">
+        <span>All categories</span>
+        <img src="/images/content/png_icons/str.png">
+    </div>
+  </div>
+  <div class="content_filterMinList"
+       *ngIf="checkAllCategories"
+  >
+    <div *ngFor="let o of categories; let i = index">
+      <span>{{o}}</span><span>{{i}}</span>
+    </div>
+  </div>
+
+  <!--    mobile-->
+
   <div class="content_items">
-    <app-item *ngFor = "let items of obj"
+    <app-item
+    *ngFor = "let items of obj"
     [item] = items
+    class="content_items_item"
     >
     </app-item>
+    <app-item-min
+      *ngFor = "let items of objMin"
+      [item] = items
+      class="content_items_itemMin"
+    >
+    </app-item-min>
   </div>
 </div>
 

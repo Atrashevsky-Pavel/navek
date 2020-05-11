@@ -66,9 +66,6 @@ $header-button6: 49.72%;
   left: 18px;
   top: 24px;
 }
-.header_userName_cross {
-  display: none;
-}
 .header_user {
   position: absolute;
   right: 3.75%;
@@ -94,11 +91,7 @@ $header-button6: 49.72%;
   }
   span {
     font-family: SF Pro Display;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
-    color: $titles-color;
+    @include text(normal, normal, 18px, 21px, $titles-color);
   }
   div {
     height: 1px;
@@ -144,5 +137,83 @@ $header-button6: 49.72%;
     line-height: 150%;
     letter-spacing: -0.03em;
     color: #4640DE;
+  }
+}
+.header_userNameMin {
+  position: absolute;
+  z-index: 7;
+  top: 0%;
+  left: 0%;
+  height: 346px;
+  width: 375px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+}
+.header_userNameMin_buttons {
+  height: 75px;
+  img:nth-child(1) {
+    margin-top: 18px;
+    margin-left: 20px;
+  }
+  img:nth-child(2) {
+    float: right;
+    margin-top: 21px;
+    margin-right: 18px;
+  }
+}
+.header_userNameMin_name {
+  height: 70px;
+  span {
+    font-family: SF Pro Display;
+    display: block;
+    margin-left: 18px;
+    @include text(normal, normal, 18px, 21px, $titles-color);
+  }
+  span:nth-child(1) {
+    font-weight: bold;
+  }
+  span:nth-child(2) {
+    margin-top: 6px;
+  }
+}
+.header_userNameMin_hr {
+  height: 1px;
+  background: #EAEAEA;
+}
+.header_userNameMin_favourite {
+ height: 40px;
+  margin-top: 21px;
+  span {
+    font-family: SF Pro Display;
+    @include text(normal, 500, 15px, 18px, $titles-color);
+    margin-left: 18px;
+  }
+  span:nth-child(2) {
+    float: right;
+    margin-right: 18px;
+    @include text(normal, 600, 15px, 18px, #4640DE);
+  }
+}
+.header_userNameMin_settings {
+  height: 81px;
+  span {
+    display: block;
+    font-family: SF Pro Display;
+    @include text(normal, 500, 15px, 18px, $titles-color);
+    margin-left: 18px;
+  }
+  span:nth-child(2) {
+    margin-top: 22px;
+  }
+}
+.header_userNameMin_logout {
+  height: 57px;
+  span {
+    font-family: SF Pro Display;
+    text-align: center;
+    display: block;
+    margin-top: 16px;
+    @include text(normal, normal, 16px, 150%, #4640DE);
+    letter-spacing: -0.03em;
   }
 }

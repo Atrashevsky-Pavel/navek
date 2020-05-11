@@ -9,11 +9,15 @@ import { Component} from '@angular/core';
 })
 export class HeaderComponent {
   check = false;
+  checkMin = false;
   callUser() {
     if (this.check) {
       this.check = false;
     } else {
       this.check = true;
     }
+  }
+  callUserMin(val) {
+    this.checkMin = val;
   }
 }

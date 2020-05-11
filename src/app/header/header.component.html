@@ -1,6 +1,6 @@
 <div class="header">
   <img class="header_image" src="/images/png_icons/header/Boon.png">
-  <img (click)="callUser()" class="header_hamburger" src="/images/header/hamburger.png">
+  <img (click)="callUserMin(true)" class="header_hamburger" src="/images/header/hamburger.png">
   <span>Raise money for...</span>
   <span>Take a tour</span>
   <span>Pricing</span>
@@ -11,7 +11,7 @@
 <div class="header_userName"
 *ngIf="check"
 >
-  <span><img (click)="callUser()" class="header_userName_cross" src="/images/header/Vector.png">Username</span>
+  <span>Username</span>
   <span>example@mail.com</span>
   <div></div>
   <div>
@@ -22,4 +22,29 @@
   <span>Profile settings</span>
   <div></div>
   <span>Logout</span>
+</div>
+
+<div class="header_userNameMin"
+*ngIf="checkMin"
+>
+  <div class="header_userNameMin_buttons">
+    <img (click)="callUserMin(false)" class="header_userName_cross" src="/images/header/Vector.png">
+    <img src="/images/header/boonMin.png">
+  </div>
+  <div class="header_userNameMin_name">
+    <span>Username</span>
+    <span>example@mail.com</span>
+  </div>
+  <div class="header_userNameMin_hr"></div>
+  <div class="header_userNameMin_favourite">
+    <span>Favourite projects</span><span>21</span>
+  </div>
+  <div class="header_userNameMin_settings">
+    <span>Profile settings</span>
+    <span>Projects</span>
+  </div>
+  <div class="header_userNameMin_hr"></div>
+  <div class="header_userNameMin_logout">
+    <span>Logout</span>
+  </div>
 </div>

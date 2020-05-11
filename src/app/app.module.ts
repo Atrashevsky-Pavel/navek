@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { ItemComponent } from './item/item.component';
 import { HeaderComponent } from './header/header.component';
 import { CategoriesComponent } from './categories/categories.component';
+import { ItemMinComponent } from './item-min/item-min.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ItemComponent,
     HeaderComponent,
-    CategoriesComponent
+    CategoriesComponent,
+    ItemMinComponent
   ],
   imports: [
     BrowserModule,

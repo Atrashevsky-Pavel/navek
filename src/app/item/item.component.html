@@ -1,20 +1,21 @@
-<div class="content_items_item">
-  <img src="/images/item/main_jpeg/{{item.img}}.jpg">
-  <div class="content_items_item_name">
+<img class="content_items_item_imgMain" src="/images/item/main_jpeg/{{item.img}}.jpg">
+<div class="content_items_item_name">
     <span>{{item.name}}</span>
-  </div>
-  <div class="content_items_item_text">
+</div>
+<div class="content_items_item_text">
     <p>{{item.text}}</p>
-  </div>
-  <div class="content_items_item_img">
+</div>
+<div class="content_items_item_img">
     <img src="/images/item/logo.png">
-    <span>{{item.company}}</span><br>
-    <span class="content_items_item_img_span">{{item.point}}</span>
-  </div>
-  <div class="content_items_item_scale">
-    <div style="width: {{item.width}}%"></div>
-  </div>
-  <div class="content_items_item_status">
+    <div>
+      <span>{{item.company}}</span><br>
+      <span>{{item.point}}</span>
+    </div>
+</div>
+<div class="content_items_item_scale">
+    <div style="width: {{item.width}}" ></div>
+</div>
+<div class="content_items_item_status">
     <div>
       <span>funded</span>
       <span class="content_items_item_status_sum">${{item.funded}}</span>
@@ -23,10 +24,9 @@
       <span>Goal</span>
       <span class="content_items_item_status_sum">${{item.goal}}</span>
     </div>
-   <div>
+    <div>
      <span>days left</span>
      <span class="content_items_item_status_sum">{{item.days_left}}</span>
-   </div>
-  </div>
+    </div>
 </div>
 
